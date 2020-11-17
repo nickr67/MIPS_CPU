@@ -1,0 +1,235 @@
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_control_logic.v was successful.
+# Compile of concatenator.v was successful.
+# Compile of constant_four.v was successful.
+# Compile of control_logic.v was successful.
+# Compile of data_memory.v was successful.
+# Compile of instruction_memory.v was successful.
+# Compile of mips_cpu.v was successful.
+# Compile of mux5.v was successful.
+# Compile of mux32.v was successful.
+# Compile of program_counter.v was successful.
+# Compile of register_file.v was successful.
+# Compile of shift_left2.v was successful.
+# Compile of sign_extend.v was successful.
+# Compile of mips_cpu_tb.v was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -gui work.mips_cpu_tb
+# vsim -gui work.mips_cpu_tb 
+# Start time: 19:28:38 on Nov 16,2020
+# Loading work.mips_cpu_tb
+# Loading work.mips_cpu
+# Loading work.program_counter
+# Loading work.sign_extend
+# Loading work.adder
+# Loading work.shift_left2
+# Loading work.mux5
+# Loading work.alu_control_logic
+# Loading work.control_logic
+# Loading work.alu
+# Loading work.mux32
+# Loading work.data_memory
+# Loading work.instruction_memory
+# Loading work.register_file
+# Loading work.constant_four
+# Loading work.concatenator
+# ** Error: (vsim-3063) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'reset' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu_tb.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (5) for port 'input_sel_one'. The port definition is at: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mux5.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst12 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 97
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (5) for port 'input_sel_zero'. The port definition is at: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mux5.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst12 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 97
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (5) for port 'output_selection'. The port definition is at: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mux5.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst12 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 97
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst13'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst13 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 104
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(104): [TFMPC] - Missing connection for port 'output_alufunct'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst15'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst15 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 123
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(123): [TFMPC] - Missing connection for port 'alu_funct'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst2'.  Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst2 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 157
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(157): [TFMPC] - Missing connection for port 'field_addr16'.
+# Error loading design
+# End time: 19:28:39 on Nov 16,2020, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 12
+# Compile of mips_cpu.v was successful.
+# Compile of mips_cpu.v was successful.
+# Compile of mux5.v was successful.
+# Compile of mips_cpu.v was successful.
+# Compile of mips_cpu_tb.v was successful.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_control_logic.v was successful.
+# Compile of concatenator.v was successful.
+# Compile of constant_four.v was successful.
+# Compile of control_logic.v was successful.
+# Compile of data_memory.v was successful.
+# Compile of instruction_memory.v was successful.
+# Compile of mux5.v was successful.
+# Compile of mux32.v was successful.
+# Compile of program_counter.v was successful.
+# Compile of register_file.v was successful.
+# Compile of shift_left2.v was successful.
+# Compile of sign_extend.v was successful.
+# Compile of mips_cpu_tb.v was successful.
+# Compile of mips_cpu.v was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -gui work.mips_cpu_tb
+# vsim -gui work.mips_cpu_tb 
+# Start time: 19:39:49 on Nov 16,2020
+# Loading work.mips_cpu_tb
+# Loading work.mips_cpu
+# Loading work.program_counter
+# Loading work.sign_extend
+# Loading work.adder
+# Loading work.shift_left2
+# Loading work.mux5
+# Loading work.alu_control_logic
+# Loading work.control_logic
+# Loading work.alu
+# Loading work.mux32
+# Loading work.data_memory
+# Loading work.instruction_memory
+# Loading work.register_file
+# Loading work.constant_four
+# Loading work.concatenator
+# ** Error: (vsim-3063) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'reset' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu_tb.v Line: 9
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst13'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst13 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 103
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(103): [TFMPC] - Missing connection for port 'output_alufunct'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst15'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst15 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 122
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(122): [TFMPC] - Missing connection for port 'alu_funct'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst2'.  Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst2 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 156
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(156): [TFMPC] - Missing connection for port 'field_addr16'.
+# Error loading design
+# End time: 19:39:49 on Nov 16,2020, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 15
+# Compile of mips_cpu_tb.v was successful.
+vsim -gui work.mips_cpu_tb
+# vsim -gui work.mips_cpu_tb 
+# Start time: 19:56:33 on Nov 16,2020
+# Loading work.mips_cpu_tb
+# Loading work.mips_cpu
+# Loading work.program_counter
+# Loading work.sign_extend
+# Loading work.adder
+# Loading work.shift_left2
+# Loading work.mux5
+# Loading work.alu_control_logic
+# Loading work.control_logic
+# Loading work.alu
+# Loading work.mux32
+# Loading work.data_memory
+# Loading work.instruction_memory
+# Loading work.register_file
+# Loading work.constant_four
+# Loading work.concatenator
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst13'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst13 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 103
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(103): [TFMPC] - Missing connection for port 'output_alufunct'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst15'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst15 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 122
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(122): [TFMPC] - Missing connection for port 'alu_funct'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst2'.  Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst2 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 156
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(156): [TFMPC] - Missing connection for port 'field_addr16'.
+add wave -position insertpoint  \
+sim:/mips_cpu_tb/clk
+force -freeze sim:/mips_cpu_tb/clk 1 0, 0 {50 ps} -r 100
+# WARNING: No extended dataflow license exists
+# Break key hit
+quit -sim
+# End time: 19:59:59 on Nov 16,2020, Elapsed time: 0:03:26
+# Errors: 0, Warnings: 8
+vsim work.mips_cpu_tb
+# vsim work.mips_cpu_tb 
+# Start time: 20:00:09 on Nov 16,2020
+# Loading work.mips_cpu_tb
+# Loading work.mips_cpu
+# Loading work.program_counter
+# Loading work.sign_extend
+# Loading work.adder
+# Loading work.shift_left2
+# Loading work.mux5
+# Loading work.alu_control_logic
+# Loading work.control_logic
+# Loading work.alu
+# Loading work.mux32
+# Loading work.data_memory
+# Loading work.instruction_memory
+# Loading work.register_file
+# Loading work.constant_four
+# Loading work.concatenator
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst13'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst13 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 103
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(103): [TFMPC] - Missing connection for port 'output_alufunct'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst15'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst15 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 122
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(122): [TFMPC] - Missing connection for port 'alu_funct'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst2'.  Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst2 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 156
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(156): [TFMPC] - Missing connection for port 'field_addr16'.
+quit -sim
+# End time: 20:00:23 on Nov 16,2020, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 7
+vlog -work work C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:00:35 on Nov 16,2020
+# vlog -reportprogress 300 -work work C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu_tb.v 
+# -- Compiling module mips_cpu_tb
+# 
+# Top level modules:
+# 	mips_cpu_tb
+# End time: 20:00:35 on Nov 16,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.mips_cpu_tb
+# vsim work.mips_cpu_tb 
+# Start time: 20:00:46 on Nov 16,2020
+# Loading work.mips_cpu_tb
+# Loading work.mips_cpu
+# Loading work.program_counter
+# Loading work.sign_extend
+# Loading work.adder
+# Loading work.shift_left2
+# Loading work.mux5
+# Loading work.alu_control_logic
+# Loading work.control_logic
+# Loading work.alu
+# Loading work.mux32
+# Loading work.data_memory
+# Loading work.instruction_memory
+# Loading work.register_file
+# Loading work.constant_four
+# Loading work.concatenator
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst13'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst13 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 103
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(103): [TFMPC] - Missing connection for port 'output_alufunct'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst15'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst15 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 122
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(122): [TFMPC] - Missing connection for port 'alu_funct'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst2'.  Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_cpu_tb/mips_cpuinstance/b2v_inst2 File: C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v Line: 156
+# ** Warning: (vsim-3722) C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v(156): [TFMPC] - Missing connection for port 'field_addr16'.
+add wave -position insertpoint  \
+sim:/mips_cpu_tb/clk
+force -freeze sim:/mips_cpu_tb/clk 1 100
+force -drive sim:/mips_cpu_tb/clk 1 100
+# ** UI-Msg: (vsim-3458) Cannot use the 'force -drive' command on a register.
+# 
+force -freeze sim:/mips_cpu_tb/clk 0 0, 1 {50 ps} -r 100
+run
+force -freeze sim:/mips_cpu_tb/mips_cpuinstance/b2v_inst17/i 1 0
+run -all
+# ** Note: $finish    : C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu_tb.v(24)
+#    Time: 607 ps  Iteration: 0  Instance: /mips_cpu_tb
+# End time: 20:13:21 on Nov 16,2020, Elapsed time: 0:12:35
+# Errors: 0, Warnings: 6

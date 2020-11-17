@@ -1,0 +1,106 @@
+C:/Users/Nicky/Documents/GitHub/MIPS_CPU/sign_extend.v {1 {vlog -work work -stats=none {C:\Users\Nicky\Documents\GitHub\MIPS_CPU\sign_extend.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sign_extend
+
+Top level modules:
+	sign_extend
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/adder.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/concatenator.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/concatenator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module concatenator
+
+Top level modules:
+	concatenator
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/shift_left2.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/shift_left2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module shift_left2
+
+Top level modules:
+	shift_left2
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/instruction_memory.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/instruction_memory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module instruction_memory
+
+Top level modules:
+	instruction_memory
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/alu_control_logic.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/alu_control_logic.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu_control_logic
+
+Top level modules:
+	alu_control_logic
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mux32.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mux32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux32
+
+Top level modules:
+	mux32
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/program_counter.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/program_counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module program_counter
+
+Top level modules:
+	program_counter
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mips_cpu.v {1 {vlog -work work -stats=none {C:\Users\Nicky\Documents\GitHub\MIPS_CPU\mips_cpu.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mips_cpu
+
+Top level modules:
+	mips_cpu
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/alu.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/data_memory.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/data_memory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module data_memory
+
+Top level modules:
+	data_memory
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/register_file.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/register_file.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module register_file
+
+Top level modules:
+	register_file
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/constant_four.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/constant_four.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module constant_four
+
+Top level modules:
+	constant_four
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/control_logic.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/control_logic.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module control_logic
+
+Top level modules:
+	control_logic
+
+} {} {}} C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mux5.v {1 {vlog -work work -stats=none C:/Users/Nicky/Documents/GitHub/MIPS_CPU/mux5.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux5
+
+Top level modules:
+	mux5
+
+} {} {}}

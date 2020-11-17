@@ -1,0 +1,15 @@
+// Constant Four. MIPS CPU
+// Nicolas Rodriguez
+// Nov 13, 2020
+
+module constant_four (plus_four_pc);
+
+// i/o
+output wire [31:0] plus_four_pc;
+
+// logic
+localparam  four = 32'h0000_0004;
+assign plus_four_pc = four;
+
+
+endmodule // constant_four

@@ -1,0 +1,15 @@
+// Sign Extend 16 to 32. MIPS CPU
+// Nicolas Rodriguez
+// Nov 14, 2020
+
+module sign_extend (input_16, output_32);
+
+// i/o
+input wire [15:0] input_16;
+output wire [31:0] output_32;
+
+// logic
+assign output_32[15:0]  = input_16[15:0];
+assign output_32[31:16] = input_16[15];
+
+endmodule // sign_extend

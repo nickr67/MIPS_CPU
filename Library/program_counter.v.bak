@@ -1,0 +1,29 @@
+// Program Counter. MIPS CPU
+// Nicolas Rodriguez
+// Nov 13, 2020
+
+module program_counter (clk, reset, current_count, new_count);
+
+// i/o
+input clk, reset;
+input wire [31:0] new_count;
+
+output wire [31:0] current_count;
+
+// local
+reg [31:0] local_register;
+
+// logic
+assign current_count = local_register;
+
+always @ (posedge clk) begin
+
+    if (!reset) begin
+        local_register <= 0;
+    end // if !reset
+    else begin
+        local_register <= new_count;
+    end // else !reset
+end // always clk
+
+endmodule // program_counter
