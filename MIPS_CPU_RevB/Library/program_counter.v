@@ -55,17 +55,17 @@ assign local_wire_4w[3:0]   = count_plus_four[31:28];
 always @ ( * ) begin
 
     if (!reset)
-        local_reg <= 0;
+        local_reg = 0;
 
     else begin
         if (jump_en)
-            local_reg <= {jump_addr, local_wire_4w};
+            local_reg = {jump_addr, local_wire_4w};
 
         else if (branch_en & zero_flag)
-            local_reg <= count_plus_four + branch_addr;
+            local_reg = count_plus_four + branch_addr;
 
         else
-            local_reg <= local_reg + 4;
+            local_reg = count_plus_four;
     end // else !reset
 end // always @ *
 
