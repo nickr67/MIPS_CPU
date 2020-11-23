@@ -37,7 +37,7 @@ module program_counter (clk,
 input clk, reset;
 input jump_en, branch_en, zero_flag;
 
-output reg  [31:0] address_out;
+output reg [31:0] address_out;
 
 // local
 wire  [ 3:0] local_wire_4w;

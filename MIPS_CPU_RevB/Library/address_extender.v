@@ -1,3 +1,6 @@
+// MIPS Program Counter
+// Nicolas Rodriguez
+// Nov. 22, 2020
 
 module address_extender (   field_addr16,
                             field_addr26,
