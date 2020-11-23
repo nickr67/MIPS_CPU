@@ -1,3 +1,7 @@
+// MIPS Program Counter
+// Nicolas Rodriguez
+// Nov. 22, 2020
+
 /*
 program counter updates on rising edge of the clock
 
