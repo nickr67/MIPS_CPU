@@ -45,27 +45,27 @@ wire  [25:0] jump_addr;
 wire  [31:0] branch_addr;
 wire  [31:0] count_plus_four;
 
-reg   [31:0] local_reg;
+reg   [31:0] current_count;
 
 // assign wires
-assign count_plus_four      = local_reg + 4;
+assign count_plus_four      = current_count + 4;
 assign local_wire_4w[3:0]   = count_plus_four[31:28];
 
 // combinational logic
 always @ ( * ) begin
 
     if (!reset)
-        local_reg = 0;
+        current_count = 0;
 
     else begin
         if (jump_en)
-            local_reg = {jump_addr, local_wire_4w};
+            current_count = {jump_addr, local_wire_4w};
 
         else if (branch_en & zero_flag)
-            local_reg = count_plus_four + branch_addr;
+            current_count = count_plus_four + branch_addr;
 
         else
-            local_reg = count_plus_four;
+            current_count = count_plus_four;
     end // else !reset
 end // always @ *
 
@@ -73,7 +73,7 @@ end // always @ *
 always @ (posedge clk) begin
 
     if (!reset) address_out <= 0;
-    else        address_out <= local_reg;
+    else        address_out <= current_count;
 
 end // always @ posedge clk
 
