@@ -78,7 +78,7 @@ always @ (posedge clk) begin
 end // always @ posedge clk
 
 // instances
-address_extender address_extenderInstance(
+field_extender field_extenderInstance(
     .field_addr16(field_addr16),
     .field_addr26(field_addr26),
     .branch_addr(branch_addr),

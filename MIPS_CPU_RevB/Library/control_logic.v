@@ -1,6 +1,6 @@
-// Control Logic. MIPS CPU
+// MIPS Control Logic 
 // Nicolas Rodriguez
-// Nov 13, 2020
+// Nov 23, 2020
 
 module control_logic(opcode,
                      reg_wr_en,

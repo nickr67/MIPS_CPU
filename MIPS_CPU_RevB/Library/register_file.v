@@ -1,9 +1,10 @@
-// Register File. MIPS CPU
+// MIPS Register File
 // Nicolas Rodriguez
-// Nov 14, 2020
+// Nov 23, 2020
 
 module register_file (clk,
                       reset,
+                      reg_dest_sel,
                       field_reg_src1,
                       field_reg_src2,
                       field_reg_dest,
@@ -14,7 +15,7 @@ module register_file (clk,
                       );
 
 // i/o
-input clk, reset, reg_write_enable;
+input clk, reset, reg_write_enable, reg_dest_sel;
 input wire [ 4:0] field_reg_src1;
 input wire [ 4:0] field_reg_src2;
 input wire [ 4:0] field_reg_dest;
@@ -25,8 +26,17 @@ output reg [31:0] reg_out_bus2;
 
 // local
 reg [31:0] local_register [0:31];
+reg [ 4:0] dest_reg;
 
-// logic
+// combinational logic
+always @ ( * ) begin
+    if (reg_dest_sel)
+        dest_reg = field_reg_dest;
+    else
+        dest_reg = field_reg_src2;
+end // always @ *
+
+// sequential logic
 always @ (negedge clk) begin
 
     if (!reset) begin
@@ -75,10 +85,10 @@ always @ (negedge clk) begin
         reg_out_bus2 <= local_register[field_reg_src2];
 
         if (reg_write_enable) begin
-            local_register[field_reg_dest] <= reg_input_data;
+            local_register[dest_reg] <= reg_input_data;
         end // if reg_write_enable
         else begin
-            local_register[field_reg_dest] <= local_register[field_reg_dest];
+            local_register[dest_reg] <= local_register[dest_reg];
         end // else reg_write_enable
     end // else !reset
 end // always negedge clk

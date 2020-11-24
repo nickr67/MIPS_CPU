@@ -2,10 +2,16 @@
 // Nicolas Rodriguez
 // Nov. 22, 2020
 
-module address_extender (   field_addr16,
-                            field_addr26,
-                            branch_addr,
-                            jump_addr);
+/*
+This module will actually be independent of program_counter.
+This will let the ALU have access to the sign extended
+immediate value without having to make a new sign extender.
+*/
+
+module field_extender ( field_addr16,
+                        field_addr26,
+                        branch_addr,
+                        jump_addr);
 
 // i/o
 input  wire [15:0] field_addr16;
@@ -26,4 +32,4 @@ always @ ( * ) begin
 
 end // always @ *
 
-endmodule // address_extender
+endmodule // field_extender

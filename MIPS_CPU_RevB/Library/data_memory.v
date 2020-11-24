@@ -2,7 +2,7 @@
 // Nicolas Rodriguez
 // Nov 13, 2020
 
-module data_memory_alu (clk,
+module data_memory (clk,
                     reset,
                     write_enable,
                     read_enable,
@@ -57,4 +57,4 @@ always @ ( * ) begin
     end // else read_enable
 end // always @ *
 
-endmodule // data_memory_alu
+endmodule // data_memory
