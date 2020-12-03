@@ -26,8 +26,8 @@ otherwise
 
 module program_counter (clk,
                         reset,
-                        field_addr16,
-                        field_addr26,
+                        branch_addr,
+                        jump_addr,
                         address_out,
                         jump_en,
                         branch_en,
@@ -37,12 +37,12 @@ module program_counter (clk,
 input clk, reset;
 input jump_en, branch_en, zero_flag;
 
-output reg [31:0] address_out;
+input  wire  [25:0] jump_addr;
+input  wire  [31:0] branch_addr;
+output reg   [31:0] address_out;
 
 // local
 wire  [ 3:0] local_wire_4w;
-wire  [25:0] jump_addr;
-wire  [31:0] branch_addr;
 wire  [31:0] count_plus_four;
 
 reg   [31:0] current_count;
@@ -78,11 +78,11 @@ always @ (posedge clk) begin
 end // always @ posedge clk
 
 // instances
-field_extender field_extenderInstance(
-    .field_addr16(field_addr16),
-    .field_addr26(field_addr26),
-    .branch_addr(branch_addr),
-    .jump_addr(jump_addr)
-    );
+//field_extender field_extenderInstance(
+//    .field_addr16(field_addr16),
+//    .field_addr26(field_addr26),
+//    .branch_addr(branch_addr),
+//    .jump_addr(jump_addr)
+//    );
 
 endmodule // program_counter

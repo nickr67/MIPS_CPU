@@ -1,4 +1,4 @@
-// MIPS Control Logic 
+// MIPS Control Logic
 // Nicolas Rodriguez
 // Nov 23, 2020
 
@@ -12,7 +12,7 @@ module control_logic(opcode,
                      alu_in_sel,
                      jump_en,
                      branch_en
-                        );
+                    );
 // i/o
 input wire [5:0] opcode;
 

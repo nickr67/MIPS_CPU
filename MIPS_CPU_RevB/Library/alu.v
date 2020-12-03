@@ -2,11 +2,18 @@
 // Nicolas Rodriguez
 // Nov 23, 2020
 
-module alu (operand_A, operand_B, alu_funct, alu_in_sel, output_result, zero_flag);
+module alu (operand_A,
+            reg_file_bus2,
+            sign_ext_imm,
+            alu_funct,
+            alu_in_sel,
+            output_result,
+            zero_flag
+            );
 
 // i/o
 input alu_in_sel;
-input wire [ 3:0] alu_funct;
+input wire [ 1:0] alu_funct;
 input wire [31:0] operand_A;
 input wire [31:0] reg_file_bus2;
 input wire [31:0] sign_ext_imm;
@@ -22,8 +29,8 @@ assign zero_flag = output_result ? 1'b0 : 1'b1;
 
 always @ ( * ) begin
     case(alu_funct)
-        4'b0010 : output_result = operand_A + operand_B;
-        4'b0110 : output_result = operand_A + (~operand_B + 1);
+        2'b0000 : output_result = operand_A + operand_B;
+        2'b0010 : output_result = operand_A + (~operand_B + 1);
 
         default : output_result <= 32'hzzzz_zzzz;
     endcase

@@ -6,13 +6,14 @@ module data_memory (clk,
                     reset,
                     write_enable,
                     read_enable,
+                    mem_to_reg,
                     input_addr,
                     input_data,
                     output_data
                     );
 
 // i/o
-input clk, reset, write_enable, read_enable;
+input clk, reset, write_enable, read_enable, mem_to_reg;
 input wire [31:0] input_addr;
 input wire [31:0] input_data;
 
@@ -50,7 +51,10 @@ end // always @ negedge clk
 
 always @ ( * ) begin
     if (read_enable) begin
-        output_data <= local_memory[local_addr];
+        if (mem_to_reg)
+            output_data <= local_memory[local_addr];
+        else
+            output_data <= input_data;
     end // if read_enable
     else begin
         output_data <= 32'hzzzz_zzzz;
